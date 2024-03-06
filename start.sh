@@ -47,4 +47,5 @@ docker run \
     -e repo=$repo \
     -e labels=$labels \
     -e group=$group \
+    --restart unless-stopped \
     -itd github-runner
