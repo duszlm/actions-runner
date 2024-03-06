@@ -10,7 +10,7 @@ RUN sed -i 's/archive.ubuntu.com/mirrors.aliyun.com/g' /etc/apt/sources.list && 
 
 # 安装必要的依赖
 RUN apt-get update
-RUN apt-get install curl sudo -y
+RUN apt-get install curl sudo openssh-client -y
 
 # 创建一个新用户
 RUN useradd -m blossom -s /bin/bash && \
